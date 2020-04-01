@@ -1,9 +1,12 @@
 package com.friendsuggestion.dto;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-public class UserRequestDTO {
+public class UserRequestDTO implements Serializable{
+	private static final long serialVersionUID = 1L;
 	@NotNull
 	@NotEmpty
 	private String username;
